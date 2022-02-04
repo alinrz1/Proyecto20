@@ -1,0 +1,88 @@
+﻿@model Proyecto20.Models.PEntrada
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PEntrada</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedores.Nproveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proveedores.Nproveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sucursales.Nsucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sucursales.Nsucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Referencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Referencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Captura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Captura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Cancelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Cancelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_Cancelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_Cancelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

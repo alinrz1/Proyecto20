@@ -1,0 +1,82 @@
+﻿@model Proyecto20.Models.PEntrada
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PEntrada</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedores.Nproveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proveedores.Nproveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sucursales.Nsucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sucursales.Nsucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Referencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Referencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Captura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Captura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Cancelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Cancelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_Cancelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_Cancelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

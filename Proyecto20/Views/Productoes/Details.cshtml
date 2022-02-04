@@ -1,0 +1,106 @@
+﻿@model Proyecto20.Models.Producto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Presentacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Presentacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo_Barras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo_Barras)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StockMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StockMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StockMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StockMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio_Promedio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio_Promedio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Factor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IVA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IVA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IEPS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IEPS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
